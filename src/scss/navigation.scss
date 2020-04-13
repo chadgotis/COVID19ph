@@ -1,0 +1,21 @@
+@import './colors.scss';
+
+.navigation {
+    ul {
+      display: flex;
+      padding: 1rem;
+      list-style: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+        .logo {
+            color: $color-greenish;
+            margin-right: auto;
+        }
+        li {
+            a {
+                color: $color-greenish;
+                text-decoration: none;  
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import '../scss/colors.scss';
+@import '../scss/breakpoints.scss';
+
+.hero-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+    .hash {
+        // justify-self: flex-start;
+        align-self: flex-end;
+        padding: 1rem;
+        color: $color-greenish;
+        @media (min-width: $breakpoint-tablet){
+            font-size: 2rem;
+        }
+        font-size: 4vw;
+        max-width: 300px;
+    }
+    .date {
+        justify-self: center;
+        text-align: center;
+        padding: 1rem;
+        color: $color-gray;
+        max-width: 200px;
+    }
+    .viruses {
+        justify-self: flex-end;
+        align-self: flex-end; 
+        padding: 1rem;
+    }
+}

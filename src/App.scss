@@ -1,0 +1,8 @@
+@import './scss/colors.scss';
+
+.App {
+  background-color: $color-bg;
+  margin: 1rem;
+  border-radius: 12px;
+  box-shadow: 1px 0px 7px -4px #000000;
+}
