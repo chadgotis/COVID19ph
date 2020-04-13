@@ -1,8 +1,55 @@
-.circle-body {
-    h4 {
+@import '../scss/colors.scss';
 
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    line-height:150px;
+    text-align:center;
+    font-size: 30px;
+  }
+
+  .cir-infected {
+    background: $color-darkred;
+  }
+  .cir-active {
+    background: $color-red;
+  }
+  .cir-recovered {
+    background: $color-blue;
+  }
+  .cir-death {
+    background: $color-darkish;
+  }
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  flex-wrap: wrap;
+
+  .circle-container {
+    h4 {
+      text-align: center;
+      margin: 1rem;
+      font-size: 1.5rem;
+      
     }
-    .circle {
-        
+    .val {
+      font-weight: bolder;
+      color: white;
+      font-size: 1.5rem;
     }
+    .infected {
+      color: $color-darkred;
+    }
+    .active {
+      color: $color-red;
+    }
+    .recovered {
+      color: $color-blue;
+    }
+    .death {
+      color: $color-darkish;
+    }
+  }
 }

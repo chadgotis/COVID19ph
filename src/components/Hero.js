@@ -3,7 +3,7 @@ import '../scss/hero.scss';
 import vir1 from '../assets/virus1.png';
 import vir2 from '../assets/virus2.png';
 
-const Hero = () => {
+const Hero = (props) => {
     return(
         <div className="hero-container">
             <div className="hash">
@@ -12,8 +12,7 @@ const Hero = () => {
             </div>
             <div className="date">
                 <h3>Updated:</h3>
-                <h3>April 13, 2020</h3>
-                <h3>7:15pm</h3>
+                <h3>{new Date(props.date).toDateString()}</h3>
             </div>
             <div className="viruses">
                 <img src={vir1} alt="virus"/>
