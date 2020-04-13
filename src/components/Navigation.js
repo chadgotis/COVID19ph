@@ -6,7 +6,7 @@ const Navigation = () => {
         <div className="navigation">
             <ul>
                 <li className='logo'>Bantay Covid</li>
-                <li className='links'><a href='/'>Git</a></li>
+                <li className='links'><a href='https://github.com/chadgotis/COVID19ph'>Git</a></li>
             </ul>
         </div>
     )
